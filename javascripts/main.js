@@ -7,11 +7,12 @@ function populatePage(cars) {
 		var currentCar = cars[i];
 
 		//build Dom string
-		carString+= `<div class="inventoryCard"><section><h3>${currentCar.make}</h3>`
-		carString+= `<h4>${currentCar.model}</h4>`;
+		carString+= `<div class="col-xs-6 col-md-3"><div class="thumbnail">`;
+		carString+= `<img src="${currentCar.image}">`;
+		carString+= `<section><h3>${currentCar.make} ${currentCar.model}</</h3>`;
 		carString+= `<h4>${currentCar.year}</h4>`;
-		carString+= `<h4>${currentCar.price}</h4>`;
-		carString+= `<h4>${currentCar.description}</h4></div>`;
+		carString+= `<h4>$${currentCar.price}</h4>`;
+		carString+= `<p>${currentCar.description}</p></section></div></div>`;
 	}
 	inventoryHolder.innerHTML = carString;
   // Now that the DOM is loaded, establish all the event listeners needed
