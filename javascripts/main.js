@@ -1,21 +1,21 @@
 // var cars = [];
 
-function populatePage () {
-var inventoryHolder = document.getElementById("container");
-var carString = "";
-var cars = CarLot.getInventory();
-console.log("my new array", cars);
-  // Loop over the inventory and populate the page
-  for (var i = 0; i < cars.length; i++) {
-  	var currentCar = cars[i];
-  	carString+= `<div><section><h3>${cars[i].make}</h3>`
-  	carString+= `<h4>${cars[i].model}</h4>`;
-  	carString+= `<h4>${cars[i].year}</h4>`;
-  	carString+= `<h4>${cars[i].price}</h4>`;
-  	carString+= `<h4>${cars[i].description}</h4></div>`;
-  }
-  	inventoryHolder.innerHTML = carString;
-  	return inventoryHolder;
+function populatePage (cars) {
+//insert into DOM
+	var inventoryHolder = document.getElementById("container");
+	var carString = "";
+
+	for (var i = 0; i < cars.length; i++) {
+		var currentCar = cars[i];
+
+		//build Dom string
+		carString+= `<div><section><h3>${currentCar.make}</h3>`
+		carString+= `<h4>${currentCar.model}</h4>`;
+		carString+= `<h4>${currentCar.year}</h4>`;
+		carString+= `<h4>${currentCar.price}</h4>`;
+		carString+= `<h4>${currentCar.description}</h4></div>`;
+	}
+	inventoryHolder.innerHTML = carString;
   // Now that the DOM is loaded, establish all the event listeners needed
   CarLot.activateEvents();
 }
