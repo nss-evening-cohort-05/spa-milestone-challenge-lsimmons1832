@@ -7,7 +7,7 @@ function populatePage(cars) {
 		var currentCar = cars[i];
 
 		//build Dom string
-		carString+= `<div class="col-xs-6 col-md-3"><div class="thumbnail">`;
+		carString+= `<div class="col-xs-6 col-md-4"><div class="thumbnail">`;
 		carString+= `<img src="${currentCar.image}">`;
 		carString+= `<section><h3>${currentCar.make} ${currentCar.model}</</h3>`;
 		carString+= `<h4>${currentCar.year}</h4>`;
