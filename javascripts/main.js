@@ -5,8 +5,8 @@ var inventoryHolder = document.getElementById("container");
 var carString = "";
 var cars = CarLot.getInventory();
   // Loop over the inventory and populate the page
-  for (var i = 0; i < cars.length; i++) {
-  	var currentCar = cars[i];
+  for (var i = 0; i < inventory.length; i++) {
+  	var currentCar = inventory[i];
   	carString+= `<div><section><h3>${cars[i].make}</h3>`
   	carString+= `<h4>${cars[i].model}</h4>`;
   	carString+= `<h4>${cars[i].year}</h4>`;

@@ -12,10 +12,10 @@ var CarLot = (function () {
 				var cars = JSON.parse(inventoryLoader.responseText);
 				inventory.push(cars);
 				console.log(inventory);
-     });
+     });	
     },
     getInventory: function(){
     	return inventory;
-  }
+  },
 }
 })();
