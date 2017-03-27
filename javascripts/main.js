@@ -8,8 +8,8 @@ function populatePage(cars) {
 
 		//build Dom string
 		carString+= `<div class="col-xs-6 col-md-4"><div class="thumbnail">`;
-		carString+= `<img src="${currentCar.image}">`;
-		carString+= `<section><h3>${currentCar.make} ${currentCar.model}</</h3>`;
+		carString+= `<section><img src="${currentCar.image}" class="img-rounded img-responsive" alt="Responsive image">`;
+		carString+= `<h3>${currentCar.make} ${currentCar.model}</</h3>`;
 		carString+= `<h4>${currentCar.year}</h4>`;
 		carString+= `<h4>$${currentCar.price}</h4>`;
 		carString+= `<p>${currentCar.description}</p></section></div></div>`;
