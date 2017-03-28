@@ -16,22 +16,13 @@ function populatePage(cars) {
 	}
 	inventoryHolder.innerHTML = carString;
   // Now that the DOM is loaded, establish all the event listeners needed
-  // CarLot.activateEvents();
+   CarLot.activateEvents();
 }
-// function highlightSelected(){
-// var section = document.getElementsByClassName("col-xs-6 col-md-4");
-// var userInput = document.getElementById("form-control");
+// Load the inventory and send a callback function to be
+// invoked after the process is complete
+CarLot.loadInventory(populatePage);
 
-// 	for (var j = 0; j < section.length; j++) {
-// 		section[j].addEventListener("click", function(){
-// 			var sectionContainer = document.getElementsByClassName("border");
-// 			for (var i = 0; i < sectionContainer.length; i++) {
-// 				sectionContainer[i].classList.remove("border");
-// 			}
-// 			this.classList.add("border");
-// 			userInput.focus();
-// 	});
-// }
+
 
 // userInput.addEventListener("keypress", function(event){
 // 	var sectionContainer = document.getElementsByClassName("border");
@@ -49,7 +40,3 @@ function populatePage(cars) {
 //         return false; 
 //     }
 // });
-
-// Load the inventory and send a callback function to be
-// invoked after the process is complete
-CarLot.loadInventory(populatePage);
