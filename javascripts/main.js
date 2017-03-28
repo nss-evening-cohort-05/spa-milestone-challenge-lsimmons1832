@@ -21,22 +21,3 @@ function populatePage(cars) {
 // Load the inventory and send a callback function to be
 // invoked after the process is complete
 CarLot.loadInventory(populatePage);
-
-
-
-// userInput.addEventListener("keypress", function(event){
-// 	var sectionContainer = document.getElementsByClassName("border");
-// 	var bioContainer = sectionContainer[0].childNodes[0].children[2];
-// 	bioContainer.innerHTML = "";
-//   var mimicMeElement = userInput.value;
-//   bioContainer.innerHTML += mimicMeElement;
-//   console.log("sectionContainer.innerHTML", sectionContainer);
-// });
-
-// window.addEventListener("keypress", function(event){
-//     if(event.keyCode==13){
-//         userInput.value = ""; 
-
-//         return false; 
-//     }
-// });
