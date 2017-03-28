@@ -4,7 +4,7 @@
       "make": "Nissan",
       "model": "Rogue",
       "year": "2008",
-      "price": "8999",
+      "price": "8,999",
       "image": "https://media.ed.edmunds-media.com/nissan/rogue/2008/oem/2008_nissan_rogue_4dr-suv_sl_s_oem_1_500.jpg",
       "description": "This is an immaculate 2006 Nissan Rogue with only 25000 miles on it. Leather seats, power everything."
     },
@@ -12,7 +12,7 @@
       "make": "Nissan",
       "model": "Maxima",
       "year": "2010",
-      "price": "9995",
+      "price": "9,995",
       "image": "https://media.ed.edmunds-media.com/nissan/maxima/2010/oem/2010_nissan_maxima_sedan_35-sv_fq_oem_2_500.jpg",
       "description": "This is an immaculate 2010 Nissan Maxima with 100000 miles on it. Leather seats, power everything."
     },
@@ -20,7 +20,7 @@
       "make": "Honda",
       "model": "Accord",
       "year": "2012",
-      "price": "12000",
+      "price": "12,000",
       "image": "http://gomotors.net/photos/15/a1/2012-honda-accord-euro-manual-review_2146f.jpg?i",
       "description": "This is an immaculate 2012 Honda Accord with only 53000 miles on it. Leather seats, power everything."
     },
@@ -28,7 +28,7 @@
       "make": "Mazda",
       "model": "Protege",
       "year": "2008",
-      "price": "8999",
+      "price": "8,999",
       "image": "https://www.mazdas247.com/forum/cache.php?img=http%3A%2F%2Fi168.photobucket.com%2Falbums%2Fu172%2Fncz13%2FDSC_1949e-1.jpg",
       "description": "This is an immaculate 2008 Mazda Protege with 95000 miles on it. Leather seats, power everything."
     },
@@ -36,7 +36,7 @@
       "make": "Nissan",
       "model": "Pathfinder",
       "year": "2010",
-      "price": "8999",
+      "price": "8,999",
       "image": "http://cdn4.3dtuning.com/info/Nissan%20Pathfinder%202010%20SUV/tuning/11.jpg",
       "description": "This is an immaculate 2010 Nissan Pathfinder with only 123000 miles on it. Leather seats, power everything."
     },
@@ -44,7 +44,7 @@
       "make": "Nissan",
       "model": "Rogue",
       "year": "2012",
-      "price": "1399",
+      "price": "13,999",
       "image": "http://www.cstatic-images.com/stock/900x600/266061.jpg",
       "description": "This is an immaculate 2012 Nissan Rogue with only 20000 miles on it. Leather seats, power everything."
     }
