@@ -1,13 +1,11 @@
 var CarLot = (function(oldCarLot) {
-  var section = document.getElementsByClassName("col-xs-6 col-md-4");
-  var userInput = document.getElementById("form-control");
+  var selected = document.getElementsByClassName("thumbnail");
+  var userInput = document.getElementById("userInput");
 
-	return {
-	    activateEvents: function() {
-	        console.log("I'm inside the event func", section);
+	    oldCarLot.activateEvents = function() {
 
-	        for (var j = 0; j < section.length; j++) {
-	            section[j].addEventListener("click", function() {
+	        for (var j = 0; j < selected.length; j++) {
+	            selected[j].addEventListener("click", function() {
 	                var sectionContainer = document.getElementsByClassName("border");
 	                for (var i = 0; i < sectionContainer.length; i++) {
 	                    sectionContainer[i].classList.remove("border");
@@ -17,7 +15,20 @@ var CarLot = (function(oldCarLot) {
 	            });
 	        }
 	    };
+    userInput.addEventListener("keypress", function(event) {
+        var sectionContainer = document.getElementsByClassName("border");
+        var selectedInventory = sectionContainer[0].childNodes[0].children[4];
+        selectedInventory.innerHTML = "";
+        var mimicMeElement = userInput.value;
+        selectedInventory.innerHTML += mimicMeElement;
+    });
 
-	}
-	return oldCarLot;
+    window.addEventListener("keypress", function(event) {
+        if (event.keyCode == 13) {
+            userInput.value = "";
+
+            return false;
+        }
+    });
+    return oldCarLot;
 })(CarLot);
