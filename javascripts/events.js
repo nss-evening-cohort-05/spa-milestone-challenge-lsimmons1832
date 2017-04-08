@@ -12,6 +12,7 @@ var CarLot = (function(oldCarLot) {
 	                }
 	                this.classList.add("border");
 	                userInput.focus();
+                    userInput.value = "";
 	            });
 	        }
 	    };

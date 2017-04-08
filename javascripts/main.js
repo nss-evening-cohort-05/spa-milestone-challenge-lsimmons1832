@@ -6,7 +6,7 @@ function populatePage(cars) {
 
 	for (var i = 0; i < cars.length; i++) {
 		var currentCar = cars[i];
-		if(counter === 0 || counter === 3 ){
+		if(counter %3 === 0){
 			carString += `<div class="row">`;
 		}
 		//build Dom string
@@ -18,7 +18,7 @@ function populatePage(cars) {
 		carString += `<h4>$${currentCar.price}</h4>`;
 		carString += `<p>${currentCar.description}</p></section></div></div>`;
 		counter++;
-		if(counter === 3){
+		if(counter%3 === 0){
 			carString+= `</div><div class="clearfix visible-xs-block"></div>`;
 		}
 	}
